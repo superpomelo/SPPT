@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SexView" customModule="NewProduct" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="181"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECT-2e-LDz">
+                    <rect key="frame" x="0.0" y="44" width="388" height="137"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibb-5e-R62">
+                            <rect key="frame" x="0.0" y="0.0" width="388" height="68.5"/>
+                            <state key="normal" title="男">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button1Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="N2o-uY-9VV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woI-bq-MMe">
+                            <rect key="frame" x="0.0" y="68.5" width="388" height="68.5"/>
+                            <state key="normal" title="女">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button2Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="b6B-rE-Oeg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="woI-bq-MMe" firstAttribute="leading" secondItem="ECT-2e-LDz" secondAttribute="leading" id="4er-8a-X3c"/>
+                        <constraint firstAttribute="bottom" secondItem="woI-bq-MMe" secondAttribute="bottom" id="5D9-ou-Pzt"/>
+                        <constraint firstItem="woI-bq-MMe" firstAttribute="top" secondItem="ibb-5e-R62" secondAttribute="bottom" id="H3E-ee-g9z"/>
+                        <constraint firstItem="woI-bq-MMe" firstAttribute="top" secondItem="ibb-5e-R62" secondAttribute="bottom" id="JUM-Er-agh"/>
+                        <constraint firstAttribute="trailing" secondItem="ibb-5e-R62" secondAttribute="trailing" id="Mh1-EX-X81"/>
+                        <constraint firstAttribute="trailing" secondItem="woI-bq-MMe" secondAttribute="trailing" id="StD-2l-ZxH"/>
+                        <constraint firstItem="ibb-5e-R62" firstAttribute="top" secondItem="ECT-2e-LDz" secondAttribute="top" id="bUQ-op-YCQ"/>
+                        <constraint firstItem="ibb-5e-R62" firstAttribute="leading" secondItem="ECT-2e-LDz" secondAttribute="leading" id="is0-h6-52b"/>
+                        <constraint firstItem="woI-bq-MMe" firstAttribute="height" secondItem="ibb-5e-R62" secondAttribute="height" id="u94-NA-g0Z"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ECT-2e-LDz" secondAttribute="bottom" id="4Gh-lb-Lta"/>
+                <constraint firstItem="ECT-2e-LDz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Lke-xZ-cfI"/>
+                <constraint firstItem="ECT-2e-LDz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cwT-sp-TA5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ECT-2e-LDz" secondAttribute="trailing" id="qLK-Bj-HUn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="8.6956521739130448" y="-181.80803571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

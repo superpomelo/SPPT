@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FenLeiView" customModule="NewProduct" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="302"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRm-KV-QbL">
+                    <rect key="frame" x="0.0" y="44" width="422" height="224"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYV-Jk-SS2">
+                            <rect key="frame" x="0.0" y="0.0" width="422" height="45"/>
+                            <state key="normal" title="文化">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button1Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="cen-5M-wRO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv0-bP-Uqj">
+                            <rect key="frame" x="0.0" y="45" width="422" height="44.5"/>
+                            <state key="normal" title="旅游">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button2Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="vmM-V0-jv6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZw-mt-zdu">
+                            <rect key="frame" x="0.0" y="89.5" width="422" height="45"/>
+                            <state key="normal" title="影视">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button3Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="RCH-tQ-9vD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttd-H0-VYS">
+                            <rect key="frame" x="0.0" y="134.5" width="422" height="44.5"/>
+                            <state key="normal" title="展馆">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button4Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="0qx-l3-elb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyy-Xf-RCv">
+                            <rect key="frame" x="0.0" y="179" width="422" height="45"/>
+                            <state key="normal" title="动漫">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button5Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="uE5-Su-aZ9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="tZw-mt-zdu" firstAttribute="leading" secondItem="VRm-KV-QbL" secondAttribute="leading" id="06k-fE-2cy"/>
+                        <constraint firstAttribute="bottom" secondItem="fyy-Xf-RCv" secondAttribute="bottom" id="4xB-bo-8Bc"/>
+                        <constraint firstItem="eYV-Jk-SS2" firstAttribute="top" secondItem="VRm-KV-QbL" secondAttribute="top" id="BDH-qU-fHt"/>
+                        <constraint firstItem="kv0-bP-Uqj" firstAttribute="height" secondItem="eYV-Jk-SS2" secondAttribute="height" id="DBM-vm-zY0"/>
+                        <constraint firstAttribute="trailing" secondItem="tZw-mt-zdu" secondAttribute="trailing" id="J2j-nc-cjE"/>
+                        <constraint firstItem="fyy-Xf-RCv" firstAttribute="height" secondItem="eYV-Jk-SS2" secondAttribute="height" id="O4R-Hr-zz5"/>
+                        <constraint firstItem="ttd-H0-VYS" firstAttribute="leading" secondItem="VRm-KV-QbL" secondAttribute="leading" id="OGE-pu-SBl"/>
+                        <constraint firstItem="tZw-mt-zdu" firstAttribute="height" secondItem="eYV-Jk-SS2" secondAttribute="height" id="UHf-BV-zOs"/>
+                        <constraint firstAttribute="trailing" secondItem="ttd-H0-VYS" secondAttribute="trailing" id="Vqe-Ov-WN6"/>
+                        <constraint firstItem="kv0-bP-Uqj" firstAttribute="leading" secondItem="VRm-KV-QbL" secondAttribute="leading" id="YF0-1z-oQL"/>
+                        <constraint firstItem="eYV-Jk-SS2" firstAttribute="leading" secondItem="VRm-KV-QbL" secondAttribute="leading" id="bY0-fj-Jhp"/>
+                        <constraint firstItem="ttd-H0-VYS" firstAttribute="height" secondItem="eYV-Jk-SS2" secondAttribute="height" id="cEF-5q-Dfr"/>
+                        <constraint firstAttribute="trailing" secondItem="eYV-Jk-SS2" secondAttribute="trailing" id="ecJ-Um-Sfk"/>
+                        <constraint firstItem="kv0-bP-Uqj" firstAttribute="top" secondItem="eYV-Jk-SS2" secondAttribute="bottom" id="ghq-KV-XTq"/>
+                        <constraint firstItem="kv0-bP-Uqj" firstAttribute="top" secondItem="eYV-Jk-SS2" secondAttribute="bottom" id="jwj-kb-Whf"/>
+                        <constraint firstItem="ttd-H0-VYS" firstAttribute="top" secondItem="tZw-mt-zdu" secondAttribute="bottom" id="lqF-zr-QbP"/>
+                        <constraint firstAttribute="trailing" secondItem="fyy-Xf-RCv" secondAttribute="trailing" id="pBD-qP-MGB"/>
+                        <constraint firstItem="tZw-mt-zdu" firstAttribute="top" secondItem="kv0-bP-Uqj" secondAttribute="bottom" id="qAQ-Jw-RZz"/>
+                        <constraint firstItem="fyy-Xf-RCv" firstAttribute="top" secondItem="ttd-H0-VYS" secondAttribute="bottom" id="vA9-tq-jta"/>
+                        <constraint firstItem="fyy-Xf-RCv" firstAttribute="leading" secondItem="VRm-KV-QbL" secondAttribute="leading" id="w0z-L7-fOG"/>
+                        <constraint firstAttribute="trailing" secondItem="kv0-bP-Uqj" secondAttribute="trailing" id="zVG-8N-FmY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VRm-KV-QbL" secondAttribute="trailing" id="035-5I-jkU"/>
+                <constraint firstItem="VRm-KV-QbL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Yww-e5-8Dy"/>
+                <constraint firstItem="VRm-KV-QbL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iKj-5y-4Xl"/>
+                <constraint firstItem="VRm-KV-QbL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lET-xY-oVe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VRm-KV-QbL" secondAttribute="bottom" id="ofu-xZ-V5C"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.333333333333336" y="-155.35714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

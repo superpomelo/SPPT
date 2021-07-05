@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FangshiView" customModule="NewProduct" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="304"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btQ-6U-PaJ">
+                    <rect key="frame" x="0.0" y="44" width="413" height="260"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRB-CB-hhl">
+                            <rect key="frame" x="0.0" y="0.0" width="413" height="65"/>
+                            <state key="normal" title="仅拍摄">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button1Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="d3e-j4-bOf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9b-DB-5pj">
+                            <rect key="frame" x="0.0" y="65" width="413" height="65"/>
+                            <state key="normal" title="拍摄并部署 ">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button2Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="jcF-I3-Up9"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTA-cZ-dLQ">
+                            <rect key="frame" x="0.0" y="130" width="413" height="65"/>
+                            <state key="normal" title="全套解决方案">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button3Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="OJt-3J-lb0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlV-ht-xtZ">
+                            <rect key="frame" x="0.0" y="195" width="413" height="65"/>
+                            <state key="normal" title="仅申请部署空间">
+                                <color key="titleColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="button4Action:" destination="iN0-l3-epB" eventType="touchUpInside" id="DXe-Fb-z3B"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="NRB-CB-hhl" secondAttribute="trailing" id="4NV-bx-lhx"/>
+                        <constraint firstItem="ZlV-ht-xtZ" firstAttribute="leading" secondItem="btQ-6U-PaJ" secondAttribute="leading" id="EhT-Xm-jDR"/>
+                        <constraint firstItem="N9b-DB-5pj" firstAttribute="top" secondItem="NRB-CB-hhl" secondAttribute="bottom" id="HCP-xa-Qnu"/>
+                        <constraint firstAttribute="trailing" secondItem="ZlV-ht-xtZ" secondAttribute="trailing" id="HEd-HO-43b"/>
+                        <constraint firstItem="N9b-DB-5pj" firstAttribute="leading" secondItem="btQ-6U-PaJ" secondAttribute="leading" id="HT2-EA-5eB"/>
+                        <constraint firstItem="eTA-cZ-dLQ" firstAttribute="height" secondItem="NRB-CB-hhl" secondAttribute="height" id="Ljb-vB-7LR"/>
+                        <constraint firstItem="eTA-cZ-dLQ" firstAttribute="leading" secondItem="btQ-6U-PaJ" secondAttribute="leading" id="OQQ-4i-DP9"/>
+                        <constraint firstAttribute="bottom" secondItem="ZlV-ht-xtZ" secondAttribute="bottom" id="P2d-rI-Ege"/>
+                        <constraint firstItem="ZlV-ht-xtZ" firstAttribute="height" secondItem="NRB-CB-hhl" secondAttribute="height" id="Ufk-fV-Pcu"/>
+                        <constraint firstAttribute="trailing" secondItem="eTA-cZ-dLQ" secondAttribute="trailing" id="iV3-WQ-wni"/>
+                        <constraint firstItem="eTA-cZ-dLQ" firstAttribute="top" secondItem="N9b-DB-5pj" secondAttribute="bottom" id="ktW-Js-zI6"/>
+                        <constraint firstItem="ZlV-ht-xtZ" firstAttribute="top" secondItem="eTA-cZ-dLQ" secondAttribute="bottom" id="l2N-aX-5xL"/>
+                        <constraint firstItem="NRB-CB-hhl" firstAttribute="leading" secondItem="btQ-6U-PaJ" secondAttribute="leading" id="nRt-Yr-tPC"/>
+                        <constraint firstItem="N9b-DB-5pj" firstAttribute="top" secondItem="NRB-CB-hhl" secondAttribute="bottom" id="ot3-Ce-hre"/>
+                        <constraint firstItem="NRB-CB-hhl" firstAttribute="top" secondItem="btQ-6U-PaJ" secondAttribute="top" id="pbA-0W-pPW"/>
+                        <constraint firstAttribute="trailing" secondItem="N9b-DB-5pj" secondAttribute="trailing" id="qyV-hN-69m"/>
+                        <constraint firstItem="ZlV-ht-xtZ" firstAttribute="top" secondItem="eTA-cZ-dLQ" secondAttribute="bottom" id="toi-QG-z6g"/>
+                        <constraint firstItem="eTA-cZ-dLQ" firstAttribute="top" secondItem="N9b-DB-5pj" secondAttribute="bottom" id="udF-6p-ban"/>
+                        <constraint firstItem="N9b-DB-5pj" firstAttribute="height" secondItem="NRB-CB-hhl" secondAttribute="height" id="w9e-Yy-Adj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="btQ-6U-PaJ" secondAttribute="trailing" id="PbW-XY-vax"/>
+                <constraint firstItem="btQ-6U-PaJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Pgw-UF-hJT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="btQ-6U-PaJ" secondAttribute="bottom" id="mJD-3j-oJg"/>
+                <constraint firstItem="btQ-6U-PaJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="mOF-TG-cHI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26.811594202898554" y="-145.3125"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
